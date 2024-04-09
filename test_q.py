@@ -44,7 +44,3 @@ class Point():
 def sort_list_by_len(spis: List[str]):
     return sorted(spis, key=lambda x: (len(x), -len(x)))
 
-
-s = ['fdsfds', 'eqweqw', 'eqwqqw', 'fseqwwfqfweg', 'popa', 'sadwqeweqewq']
-
-print(sort_list_by_len(s))
