@@ -42,10 +42,9 @@ class Point():
             raise TypeError("new_x and new_y must be of type int or float")
         
 def sort_list_by_len(spis: List[str]):
-    new_s = sorted(spis, key=len)
-    return sorted(new_s, key=len, reverse=True)
+    return sorted(spis, key=lambda x: (len(x), -len(x)))
 
 
-s = ['fdsfds', 'eqweqw', 'fseqwwfqfweg', 'popa', 'sadwqeweqewq']
+s = ['fdsfds', 'eqweqw', 'eqwqqw', 'fseqwwfqfweg', 'popa', 'sadwqeweqewq']
 
 print(sort_list_by_len(s))
